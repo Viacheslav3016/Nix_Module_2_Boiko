@@ -13,5 +13,10 @@ class LogicalClassTest {
         String expected = logicalClass.FindingUniq(list);
         String actual = "Masha";
         assertEquals(expected, actual);
+
+        List<String> list2 = Arrays.asList("Nick", "Sergey", "Fedor", "Kirill", "Oleg", "Kirill", "Marina", "Slava", "Marina");
+        String expected2 = logicalClass.FindingUniq(list2);
+        String actual2 = "Fedor";
+        assertEquals(expected2, actual2);
     }
 }
